@@ -4,6 +4,11 @@ export default function StoryGenerator() {
   const [story, setStory] = useState('');
   const [theme, setTheme] = useState('Survival');
 
+export default function StoryGenerator() {
+  return <h1>Hello, world!</h1>;
+}
+
+
   const fetchStory = async () => {
     const response = await fetch(`https://your-backend-url.onrender.com/get-story?theme=${theme}`);
     const data = await response.json();
