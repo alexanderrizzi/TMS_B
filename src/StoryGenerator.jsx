@@ -3,8 +3,9 @@ import { useState } from 'react';
 export default function StoryGenerator() {
   const [story, setStory] = useState('');
   const [theme, setTheme] = useState('Survival');
-  return <h1>Hello, world!</h1>;
   console.log('StoryGenerator component is rendering');
+  return <h1>Hello, world!</h1>;
+
 
   const fetchStory = async () => {
     const response = await fetch(`https://your-backend-url.onrender.com/get-story?theme=${theme}`);
