@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
 export default function StoryGenerator() {
-  const [story, setStory] = useState('');
-  const [theme, setTheme] = useState('Survival');
   console.log('StoryGenerator component is rendering');
   return <h1>Hello, world!</h1>;
 
